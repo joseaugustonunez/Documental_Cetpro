@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Correo Electrónico</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .logo {
+        display: block;
+        margin: auto;
+        max-width: 150px; /* Cambia según el tamaño deseado */
+      }
+      .content {
+        padding: 20px;
+        text-align: center;
+      }
+      .message {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #1d1add;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 16px;
+      }
+      .title {
+        text-align: center;
+      }
+      .slog {
+        color: #636269;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://i.postimg.cc/FHVM7hKk/wave-2.png"
+        alt="Encabezado"
+        width="100%"
+      />
+      <div class="content">
+        <img
+          src="https://i.postimg.cc/TPqsjgsJ/Logoslg.png"
+          alt="Logo"
+          class="logo"
+        />
+        <p class="slog">Escuela de Emprendedores</p>
+        <p class="message">
+          Se ha pasado el trámite a su área con el rol:
+          <strong>{{usuarioDestino}}</strong>.<br />
+          El trámite fue originado por un usuario con el rol:
+          <strong>{{usuarioOrigen}}</strong>.<br /><br />
+          Comentario: {{comentario}}
+        </p>
+      </div>
+
+      <!-- Pie de página -->
+      <p class="title">&copy; 2024 CTPRO SLG. Todos los derechos reservados.</p>
+
+      <img
+        src="https://i.postimg.cc/RhDG8bGR/base.png"
+        alt="Pie de Página"
+        width="100%"
+      />
+    </div>
+  </body>
+</html>
